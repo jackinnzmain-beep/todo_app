@@ -1,0 +1,27 @@
+# Todo 앱 — AI가 굳이 읽지 않아도 되는 것들
+# (앱 기능 코드가 아님. 노이즈를 줄이기 위한 제외 목록)
+
+# 남이 만든 도구 뭉치 (생기면)
+node_modules/
+
+# 빌드·배포 결과물 (생기면)
+dist/
+build/
+
+# Git 저장 이력 (나중에 Git을 쓰면)
+.git/
+
+# 캐시·임시
+.cache/
+*.log
+tmp/
+temp/
+
+# macOS 잡파일
+.DS_Store
+**/.DS_Store
+
+# 에디터/OS 잡파일
+Thumbs.db
+*.swp
+*~

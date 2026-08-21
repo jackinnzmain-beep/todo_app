@@ -1,0 +1,21 @@
+# Git에 넣지 않을 것들 (세이브할 필요 없는 잡파일·결과물)
+
+# 남이 만든 도구 뭉치
+node_modules/
+
+# 빌드·배포 결과물
+dist/
+build/
+
+# 캐시·로그·임시
+.cache/
+*.log
+tmp/
+temp/
+
+# macOS / 에디터 잡파일
+.DS_Store
+**/.DS_Store
+Thumbs.db
+*.swp
+*~
