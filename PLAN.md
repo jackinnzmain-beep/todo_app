@@ -49,6 +49,7 @@
 | UI 참고 | `UI.md` |
 | 제외 목록 | `.cursorignore` |
 | Git 제외 | `.gitignore` |
+| 소개·작업 기록 | `README.md` |
 
 ## Phase 목록
 
@@ -124,6 +125,7 @@ Phase 1 추가
 
 - 기술·저장 방식은 위 “기술·저장 결정”을 따른다.
 - 화면 방향은 `UI.md`를 따른다.
+- GitHub 소개·작업 기록 표는 `README.md`를 따른다. Phase가 끝날 때마다 같은 규칙으로 한 줄 추가한다.
 - Git 저장 시점: Phase 검증 통과 후. 이름 예) `Phase 1: Todo 추가 기능`
 - 폴더/파일 구조의 구체안은 Phase 1 시작 직전에 설명한다.
 - 이 문서는 Phase가 끝날 때마다 갱신한다.
