@@ -21,7 +21,22 @@
   function addTodo(text) {
     const item = document.createElement("li");
     item.className = "todo-item";
-    item.textContent = text;
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.className = "todo-check";
+    checkbox.setAttribute("aria-label", "완료 표시");
+
+    const label = document.createElement("span");
+    label.className = "todo-text";
+    label.textContent = text;
+
+    checkbox.addEventListener("change", function () {
+      item.classList.toggle("is-completed", checkbox.checked);
+    });
+
+    item.appendChild(checkbox);
+    item.appendChild(label);
     list.appendChild(item);
     updateEmptyState();
   }

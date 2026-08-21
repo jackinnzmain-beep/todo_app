@@ -108,6 +108,9 @@ body {
 }
 
 .todo-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
   padding: 0.9rem 1rem;
   border-bottom: 1px solid var(--line);
   font-size: 1.05rem;
@@ -116,6 +119,26 @@ body {
 
 .todo-item:last-child {
   border-bottom: none;
+}
+
+.todo-check {
+  flex-shrink: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: 0.2rem;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.todo-text {
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.todo-item.is-completed .todo-text {
+  color: var(--muted);
+  text-decoration: line-through;
 }
 
 .empty-message {
