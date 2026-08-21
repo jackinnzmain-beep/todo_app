@@ -31,12 +31,23 @@
     label.className = "todo-text";
     label.textContent = text;
 
+    const deleteButton = document.createElement("button");
+    deleteButton.type = "button";
+    deleteButton.className = "todo-delete";
+    deleteButton.textContent = "삭제";
+
     checkbox.addEventListener("change", function () {
       item.classList.toggle("is-completed", checkbox.checked);
     });
 
+    deleteButton.addEventListener("click", function () {
+      item.remove();
+      updateEmptyState();
+    });
+
     item.appendChild(checkbox);
     item.appendChild(label);
+    item.appendChild(deleteButton);
     list.appendChild(item);
     updateEmptyState();
   }

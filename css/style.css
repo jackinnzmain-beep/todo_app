@@ -8,6 +8,7 @@
   --accent-hover: #0d5f59;
   --accent-text: #ffffff;
   --line: #d5dee5;
+  --danger: #b42318;
   --radius: 8px;
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Source Sans 3", "Helvetica Neue", sans-serif;
@@ -139,6 +140,24 @@ body {
 .todo-item.is-completed .todo-text {
   color: var(--muted);
   text-decoration: line-through;
+}
+
+.todo-delete {
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+  padding: 0.15rem 0.35rem;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--danger);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.todo-delete:hover {
+  text-decoration: underline;
 }
 
 .empty-message {
