@@ -77,14 +77,15 @@ Cursor AI와 Phase 단위로 협업하며, **추가 → 완료 체크 → 삭제
 | 2026-08-21 | Phase 1 | Todo 추가 기능을 만들고 검증함 | `index.html`·`css/style.css`·`js/main.js` 추가, `PLAN.md` 갱신 | 체크·삭제·LocalStorage | 자동 검사 + 브라우저 확인 통과 | 본 커밋 · Push 완료 | Phase 2 |
 | 2026-08-21 | Phase 2 | Todo 완료 체크 기능을 만들고 검증함 | `js/main.js`·`css/style.css`에 체크·완료 스타일, `PLAN.md` 갱신 | 삭제·LocalStorage | 자동 검사 + 브라우저 확인 통과 | 본 커밋 · Push 완료 | Phase 3 |
 | 2026-08-21 | Phase 3 | Todo 삭제 기능을 만들고 검증함 | `js/main.js`·`css/style.css`에 삭제 버튼, `PLAN.md` 갱신 | LocalStorage | 자동 검사 + 브라우저 확인 통과 | 본 커밋 · Push 완료 | Phase 4 |
+| 2026-08-21 | Phase 4 | LocalStorage로 목록을 저장하고 검증함 | `js/main.js`에 저장·불러오기, `PLAN.md` 갱신 | 새 UI·서버 연동 | 자동 검사 + 브라우저 확인 통과 | 본 커밋 · Push 완료 | Phase 5 |
 
 ## 현재 상태
 
 | 항목 | 내용 |
 |------|------|
-| 현재 단계 | Phase 3 완료 |
-| 앱 코드 | 추가·완료 체크·삭제까지 동작 |
-| 다음 할 일 | Phase 4(LocalStorage 저장) |
+| 현재 단계 | Phase 4 완료 |
+| 앱 코드 | 추가·체크·삭제·새로고침 유지까지 동작 |
+| 다음 할 일 | Phase 5(최종 QA) |
 
 ## 관련 문서
 
