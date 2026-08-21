@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1 class="brand">Todo</h1>
+      <p class="lead">오늘 할 일을 적어 보세요.</p>
+
+      <form class="add-form" id="add-form" novalidate>
+        <label class="sr-only" for="todo-input">할 일</label>
+        <input
+          id="todo-input"
+          class="todo-input"
+          type="text"
+          name="todo"
+          placeholder="할 일을 입력하세요"
+          autocomplete="off"
+        />
+        <button class="add-button" type="submit">추가</button>
+      </form>
+      <p class="form-hint" id="form-hint" hidden>할 일을 입력해 주세요.</p>
+
+      <ul class="todo-list" id="todo-list" aria-live="polite"></ul>
+      <p class="empty-message" id="empty-message">아직 할 일이 없습니다.</p>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

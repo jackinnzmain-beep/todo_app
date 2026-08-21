@@ -1,0 +1,141 @@
+:root {
+  --bg: #eef2f4;
+  --bg-end: #e4ebef;
+  --surface: #fbfcfd;
+  --text: #1c2430;
+  --muted: #5c6b7a;
+  --accent: #0f766e;
+  --accent-hover: #0d5f59;
+  --accent-text: #ffffff;
+  --line: #d5dee5;
+  --radius: 8px;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Helvetica Neue", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-end) 100%);
+}
+
+.app {
+  width: min(100% - 2.5rem, 480px);
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+.brand {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 8vw, 3.25rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.lead {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.add-form {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 2rem;
+}
+
+.todo-input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 1rem;
+}
+
+.todo-input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  border-color: var(--accent);
+}
+
+.add-button {
+  flex-shrink: 0;
+  padding: 0.75rem 1.1rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--accent-text);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background: var(--accent-hover);
+}
+
+.form-hint {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 1.75rem 0 0;
+  padding: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.todo-list:empty {
+  display: none;
+}
+
+.todo-item {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.empty-message {
+  margin: 1.75rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.empty-message[hidden] {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
